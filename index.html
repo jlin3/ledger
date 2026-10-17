@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledger</title>
+<meta name="description" content="Ledger is a personal finance app that runs only on its owner's Mac.">
+<style>
+  :root { --bg: #fbfaf7; --ink: #1d1c1a; --mute: #5f5b54; --line: #e4e0d8; --link: #2457c5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151413; --ink: #ecebe7; --mute: #a29e96; --line: #2c2a27; --link: #8fb0ff; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 56px 16px 72px; }
+  h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .lede { color: var(--mute); margin: 0 0 32px; font-size: 19px; }
+  h2 { font-size: 18px; margin: 32px 0 6px; }
+  ul { padding-left: 20px; }
+  a { color: var(--link); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--mute); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Ledger</h1>
+  <p class="lede">A personal finance app that runs only on its owner's Mac. It isn't a service and has no other users.</p>
+
+  <h2>What it does</h2>
+  <p>Ledger keeps one person's balances, bills, due dates and spending in one place. To stay current between statements, it reads the bank alert emails in its owner's own Gmail (purchase alerts, statements, payment reminders) and keeps only the numbers from them.</p>
+
+  <h2>How it uses Google</h2>
+  <ul>
+    <li>Read-only Gmail access (<code>gmail.readonly</code>), granted by the owner to their own account.</li>
+    <li>It only looks at email from the owner's banks and card issuers.</li>
+    <li>Nothing is sent, changed or deleted in Gmail.</li>
+    <li>No data leaves the owner's computer. There is no server, no account and no sharing.</li>
+  </ul>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+  <footer>Ledger · personal project by Jesse Linson · <a href="mailto:jesselinson@gmail.com">jesselinson@gmail.com</a></footer>
+</main>
+</body>
+</html>

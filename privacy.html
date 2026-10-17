@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledger privacy policy</title>
+<style>
+  :root { --bg: #fbfaf7; --ink: #1d1c1a; --mute: #5f5b54; --line: #e4e0d8; --link: #2457c5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151413; --ink: #ecebe7; --mute: #a29e96; --line: #2c2a27; --link: #8fb0ff; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 56px 16px 72px; }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  .date { color: var(--mute); margin: 0 0 28px; }
+  h2 { font-size: 18px; margin: 28px 0 6px; }
+  ul { padding-left: 20px; }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="date">Ledger · last updated October 16, 2026</p>
+
+  <p>Ledger is a personal app used by one person, its owner, on their own Mac. It is not offered to anyone else.</p>
+
+  <h2>Data Ledger accesses</h2>
+  <p>With the owner's permission, Ledger has read-only access to the owner's Gmail (Google scope <code>gmail.readonly</code>). It searches only for email from the owner's banks and card issuers.</p>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>Email is read in memory to pull out amounts, dates, balances and account endings, which update the owner's own budget and bill tracking.</li>
+    <li>Email bodies are never stored. Ledger keeps only the extracted numbers and the message ID, so it doesn't read the same email twice.</li>
+    <li>Ledger never sends, modifies, labels or deletes email.</li>
+  </ul>
+
+  <h2>Storage and sharing</h2>
+  <ul>
+    <li>All data stays on the owner's computer, in a local database. The Google sign-in token is kept in the macOS Keychain.</li>
+    <li>Nothing is sent to any server other than Google's own Gmail API. Ledger has no backend, analytics or advertising.</li>
+    <li>No data is sold, shared or transferred to anyone.</li>
+    <li>Ledger's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+  </ul>
+
+  <h2>Removing access</h2>
+  <p>Access can be removed at any time in Ledger ("Disconnect") or in Google Account → Security → Third-party connections.</p>
+
+  <h2>Contact</h2>
+  <p>Jesse Linson · <a href="mailto:jesselinson@gmail.com">jesselinson@gmail.com</a></p>
+  <p><a href="./">Back to Ledger</a></p>
+</main>
+</body>
+</html>
